@@ -15,7 +15,7 @@ const defaultElement = "button";
 const DesignSystemButton = <El extends ElementType = typeof defaultElement>(
   props: PolymorphicProps<El, Props>
 ) => {
-  const { as: Component = defaultElement, children, ...rest } = props;
+  const { as: Component = defaultElement, children, myProp, ...rest } = props;
   return <Component {...rest}>{children}</Component>;
 };
 
